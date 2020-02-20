@@ -18,13 +18,8 @@ body {
 
   #month tr{
     background-color: #f2f2f2;
-  }
-  #month tr td i{
-    display: flex;
-    flex-direction: row;
-    text-align:center;
-  }
 
+  }
 
   #month th {
     padding-top: 12px;
@@ -39,6 +34,15 @@ body {
     text-align:center;
     vertical-align:top;
     height: 150px;
+  }
+  #month tr td i{
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    width: 30px;
+    height: 30px;
+
+
   }
 
 
