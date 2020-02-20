@@ -1,1 +1,80 @@
+body {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  background-color: Blue;
+  align-items: stretch;
+}
+h3 {
+  grid-area: "b";
+  font-size: 20px;
+  align-self: left;
+}
 
+.fas {
+  grid-area: "a";
+  align-content: flex-end;
+  font-size: 25px;
+}
+
+.fa-smile-beam {
+  grid-area: "c";
+  font-size: 50px;
+  color: green;
+}
+
+section{
+  display: flex;
+  height: 600px;
+  width: 450px;
+  align-items: stretch;
+  border: 2px solid #333333;
+  border-spacing: 3em;
+  background-color: white;
+  font-family: "Arial", Arial, sans-serif;
+  font-style: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: .3fr .5fr 1fr 1fr 5fr;
+   grid-template-areas:
+              "a . b ."
+              "c d e f"
+              "g . h .";
+
+
+}
+
+ul {
+  grid-area: "f";
+}
+
+.tags {
+  width: 10em;
+  border-radius: 10px;
+  border: 2px solid Blue;
+  border-spacing: 3em;
+  align-self: center;
+}
+
+.emotion {
+  grid-area: "e";
+  font-size: 20px;
+  align-items: center;
+}
+
+#entry {
+  grid-area: "g";
+}
+
+h4 {
+  grid-area: "d";
+}
+
+.past-reflection {
+  display: flex;
+  align-items:flex-start;
+}
