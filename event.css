@@ -43,3 +43,8 @@ body{
   padding-left: 100px;
   padding-top: 30px;
 }
+
+.fas {
+  width: 20px;
+  cursor: pointer;
+}

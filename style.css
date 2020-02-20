@@ -14,10 +14,11 @@ h3 {
 
 .fas {
   padding: 10px;
+  width: 30px;
+  height: 30px;
   grid-column-start: 1;
-  grid-column-end: 5;
-  align-content: flex-end;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .fa-smile-beam {
