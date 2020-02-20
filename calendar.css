@@ -1,7 +1,6 @@
 ul {list-style-type: none;}
 body {
   display: inline-block;
-  /* justify-content: center; */
   flex-direction: row;
   font-family: Verdana, sans-serif;}
 
@@ -18,7 +17,6 @@ body {
 
   #month tr{
     background-color: #f2f2f2;
-
   }
 
   #month th {
@@ -41,10 +39,11 @@ body {
     text-align:center;
     width: 30px;
     height: 30px;
-
-
   }
 
+#entry_of_interest{
+  cursor: pointer;
+}
 
 
 
@@ -106,6 +105,7 @@ body {
 .month .next {
   float: right;
   padding-top: 10px;
+  margin-right: 40px;
 }
 
 /* Weekdays (Mon-Sun) */
