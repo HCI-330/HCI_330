@@ -27,12 +27,24 @@ body {
     text-align: left;
     background-color: #4da6ff;
     color: white;
-    height: 150px;
+    text-align:center;
   }
 
   #month tbody td {
+    text-align:center;
+    vertical-align:top;
     height: 150px;
   }
+  #month tr td i{
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    width: 30px;
+    height: 30px;
+
+
+  }
+
 
 
 
