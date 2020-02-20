@@ -41,11 +41,9 @@ div {
   grid-template-columns: 1fr 1fr;
    grid-template-rows: .3fr .5fr 1fr 1fr 5fr;
    grid-template-areas:
-              "a ."
-              "b ."
-              "c d"
-              "e f"
-              "g .";
+              "a . b ."
+              "c d e f"
+              "g . h .";
 
 
 }
@@ -76,3 +74,7 @@ h4 {
   grid-area: "d";
 }
 
+.past-reflection {
+  display: flex;
+  align-items:flex-start;
+}
