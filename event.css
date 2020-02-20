@@ -48,3 +48,10 @@ body{
   width: 20px;
   cursor: pointer;
 }
+
+button {
+  width: 40px;
+}
+#save button{
+  width:200px;
+}

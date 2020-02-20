@@ -3,7 +3,7 @@ const dateCheck = (ev) => {
 };
 
 const homepage = (ev) => {
-    window.location.href = 'calender.html';
+    window.location.href = 'calendar.html';
 };
 
 document.querySelector('.past_date').onclick = (ev) => {
