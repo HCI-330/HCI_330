@@ -173,3 +173,10 @@ body {
   background: #1abc9c;
   color: white !important
 }
+
+.past_date {
+  background:orange !important;
+}
+.current_date {
+  background:lightgreen !important;
+}
