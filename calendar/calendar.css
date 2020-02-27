@@ -2,9 +2,9 @@ ul {list-style-type: none;}
 body {
   display: inline-block;
   flex-direction: row;
+  padding-left: 230px;
   font-family: Verdana, sans-serif;
-  background-color: #D5F2E3;
-  border: 10px solid #59C3C3;
+  background-color: #B9D8C2;
 }
 
   #month {
@@ -19,14 +19,19 @@ body {
   }
 
   #month tr{
-    background-color: #FCF1D7;
+    background-color: #F6EDEC;
+
+  }
+
+  #month tr td:hover{
+    background-color: #EDDCDA;
   }
 
   #month th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #59C3C3;
+    background-color: #3779A5;
     color: white;
     text-align:center;
   }
@@ -73,7 +78,7 @@ body {
   padding-bottom:0px;
   width: 800px;
   height: 100px;
-  background: #D5F2E3;
+  background: #3779A5;
   text-align: center;
   margin: 0;
 
@@ -88,23 +93,23 @@ body {
 
 .fas {
   padding: 10px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   grid-column-start: 1;
-  font-size: 25px;
+  font-size: 40px;
   cursor: pointer;
 }
 
 .fa-sun {
-  color: #F7A785;
+  color: #FF715B;
 }
 
 .fa-cloud {
-  color: #B997A0;
+  color: #A09BC9;
 }
 
 .fa-tint {
-  color: #59C3C3;
+  color: #3779A5;
 }
 
 .future_date .event {
