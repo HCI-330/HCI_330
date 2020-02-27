@@ -2,7 +2,10 @@ ul {list-style-type: none;}
 body {
   display: inline-block;
   flex-direction: row;
-  font-family: Verdana, sans-serif;}
+  font-family: Verdana, sans-serif;
+  background-color: #D5F2E3;
+  border: 10px solid #59C3C3;
+}
 
   #month {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -16,14 +19,14 @@ body {
   }
 
   #month tr{
-    background-color: #f2f2f2;
+    background-color: #FCF1D7;
   }
 
   #month th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4da6ff;
+    background-color: #59C3C3;
     color: white;
     text-align:center;
   }
@@ -70,7 +73,7 @@ body {
   padding-bottom:0px;
   width: 800px;
   height: 100px;
-  background: #4da6ff;
+  background: #D5F2E3;
   text-align: center;
   margin: 0;
 
@@ -83,6 +86,26 @@ body {
   background: white;
 }
 
+.fas {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  grid-column-start: 1;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.fa-sun {
+  color: #F7A785;
+}
+
+.fa-cloud {
+  color: #B997A0;
+}
+
+.fa-tint {
+  color: #59C3C3;
+}
 
   /* margin: 0;
   padding: 0; */
