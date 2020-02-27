@@ -3,7 +3,7 @@ const dateCheck = (ev) => {
 };
 
 const homepage = (ev) => {
-    window.location.href = 'calendar.html';
+    window.location.href = 'february.html';
 };
 
 document.querySelector('.past_date').onclick = (ev) => {
@@ -17,5 +17,13 @@ const dateCheckF = (ev) => {
 
 document.querySelector('.future_date').onclick = (ev) => {
     dateCheckF();
+}
+
+document.querySelector('.current_date').onclick = (ev) => {
+    journal();
+}
+
+const journal = (ev) => {
+    window.location.href = 'Journaling(Data_collection_form).html';
 }
 
