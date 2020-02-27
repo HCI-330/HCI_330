@@ -2,13 +2,14 @@ const dateCheck = (ev) => {
     window.location.href = 'index.html';
 };
 
-const homepage = (ev) => {
-    window.location.href = 'february.html';
+const save = (ev) => {
+  var name = document.querySelector('#myName').getAttribute('value');
+  alert('Event Saved');
+  window.location.href = 'newFebruary.html';
 };
 
-document.querySelector('.past_date').onclick = (ev) => {
-    console.log("onclick worked")
-    dateCheck();
+const homepage = (ev) => {
+    window.location.href = 'february.html';
 };
 
 const dateCheckF = (ev) => {
@@ -27,3 +28,7 @@ const journal = (ev) => {
     window.location.href = 'Journaling(Data_collection_form).html';
 }
 
+document.querySelector('.past_date').onclick = (ev) => {
+    console.log("onclick worked")
+    dateCheck();
+};

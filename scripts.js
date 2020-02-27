@@ -18,4 +18,3 @@ const dateCheckF = (ev) => {
 document.querySelector('.future_date').onclick = (ev) => {
     dateCheckF();
 }
-

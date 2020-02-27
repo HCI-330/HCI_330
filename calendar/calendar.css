@@ -107,6 +107,10 @@ body {
   color: #59C3C3;
 }
 
+.future_date .event {
+  font-size: 11px;
+}
+
   /* margin: 0;
   padding: 0; */
 }
