@@ -4,6 +4,7 @@ const dateCheck = (ev) => {
 
 const save = (ev) => {
   var name = document.querySelector('#myName').getAttribute('value');
+  console.log(name);
   alert('Event Saved');
   window.location.href = 'newFebruary.html';
 };
