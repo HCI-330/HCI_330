@@ -7,6 +7,7 @@ body {
   border: 10px solid #59C3C3;
 }
 
+
   #month {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -29,6 +30,7 @@ body {
     background-color: #59C3C3;
     color: white;
     text-align:center;
+
   }
 
   #month tbody td {
@@ -179,4 +181,17 @@ body {
 }
 .current_date {
   background:lightgreen !important;
+}
+
+
+
+.button {
+  background-color: black; /* Green */
+  border: none;
+  color: black;
+  padding: 10px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
