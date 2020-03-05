@@ -76,21 +76,21 @@ How are you feeling today?
       <!-- <th scope="row">3</th> -->
       <td>9 <br> <span style="font-size:50px" > 😐</span></td>
       <td>10 <br> <span style="font-size:50px" > 🙂</span></td>
-      <td>11 <i class="fas fa-cloud-showers-heavy"></i></td>
-      <td>12 <i class="fas fa-cloud-showers-heavy"></i></td>
-      <td>13 <i class="fas fa-cloud-showers-heavy"></i></td>
-      <td>14 <i class="fas fa-cloud-showers-heavy"></i></td>
+      <td>11 <br> <span style="font-size:50px" > 🙂</span></td>
+      <td>12 <br> <span style="font-size:50px" > 🙂</span></td>
+      <td>13 <br> <span style="font-size:50px" > 🙂</span></td>
+      <td>14 <br> <span style="font-size:50px" > 🙂</span></td>
       <td>15 <br> <span style="font-size:50px" > 😝</span></td>
     </tr>
     <tr>
       <!-- <th scope="row">4</th> -->
       <td>16</td>
-      <td>17</td>
+      <td>17 <br> <span style="font-size:50px" > 😥</span></td>
       <td>18</td>
-      <td>19</td>
-      <td>20</td>
-      <td>21</td>
-      <td>22</td>
+      <td>19 <br> <span style="font-size:50px" > 😥</span></td>
+      <td>20 <br> <span style="font-size:50px" > 🙂</span></td>
+      <td>21 <br> <span style="font-size:50px" > 🙂</span></td>
+      <td>22 <br> <span style="font-size:50px" > 🙂</span></td>
     </tr>
     <tr>
       <!-- <th scope="row">5</th> -->
@@ -104,7 +104,13 @@ How are you feeling today?
 
       <td>24</td>
       <td>25</td>
-      <td class="future_date">26</td>
+      <td class="future_date">26
+        <div id = "new-event" class= "hidden">
+          <span> 
+            New event
+          </span>
+        </div>
+      </td>
       <td>27</td>
       <td>28</td>
       <td>29</td>
@@ -112,6 +118,35 @@ How are you feeling today?
   </tbody>
 </table>
 </body>
+
+<!-- this is the add event page -->
+<section class="fullscreen hidden" id = "hidden-panel">
+  <button id="close" onclick="closeform()">back</button>
+  <heading id= "heading"> Event </heading>
+   <form name=journaling>
+    
+      
+ 
+     <label for="Event_name">Event Name</label>
+     <input type="text" id="subject" name="name" placeholder="What's this event called?">
+ 
+ 
+     <label for="Event_location ">Event Location</label>
+     <input type="text" id="Event place" name="place" placeholder="Where's the fun going to be?">
+ 
+     <label for="Journaling">Event Description</label>
+     <textarea id="description" name="description" placeholder="What's going to happen this date?" style="height:200px"></textarea>
+ 
+     <button type="button" onclick="submitForm()" >Submit </button>
+     <script type="text/javascript" src="journalingscripts.js"></script>
+
+     <button type = "button" onclick = "hideEvent()"> remove event </button>
+     
+   </form>
+    
+    
+ </section>
+
 <script type="text/javascript" src="js/janfebmar.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
 </html>
