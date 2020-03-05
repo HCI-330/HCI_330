@@ -14,7 +14,7 @@ const homepage = (ev) => {
 };
 
 const dateCheckF = (ev) => {
-    window.location.href = 'NewEvent.html';
+    document.querySelector('#hidden-panel').classList.remove('hidden');
 };
 
 document.querySelector('.future_date').onclick = (ev) => {
@@ -34,4 +34,8 @@ const moodCheckF = (ev) => {
 };
 document.querySelector('.week').onclick = (ev) => {
     moodCheckF();
+};
+
+document.querySelector('.past_date').onclick = (ev) => {
+    dateCheck();
 };
