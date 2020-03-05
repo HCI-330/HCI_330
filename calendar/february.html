@@ -28,13 +28,6 @@ How are you feeling today?
 <button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😥</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😥</span></button>
 <button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😡</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😡</span></button>
 
-
-
-
-
-
-
-
   <table id="month">
   <thead>
     <tr>
@@ -62,8 +55,8 @@ How are you feeling today?
     <tr>
       <!-- <th scope="row">2</th> -->
       <td>2 <br> <span style="font-size:50px" > 🙂</span></td>
-      <td class="past_date">3  
-        <br> <span style="font-size:50px" > 😝</span> 
+      <td class="past_date">3
+        <br> <span style="font-size:50px" > 😝</span>
         <br> View <br> Journal
       </td>
       <td>4 <br> <span style="font-size:50px" > 🙂</span></td>
@@ -94,19 +87,12 @@ How are you feeling today?
     </tr>
     <tr>
       <!-- <th scope="row">5</th> -->
-      <td id = "current_date" class="current_date">23 <br> Write <br> Journal <br> Today      
-
-
-      </td>
-
-
-
-
+      <td id = "current_date" class="current_date">23 <br> Write <br> Journal <br> Today</td>
       <td>24</td>
       <td>25</td>
       <td class="future_date">26
         <div id = "new-event" class= "hidden">
-          <span> 
+          <span>
             New event
           </span>
         </div>
@@ -117,6 +103,15 @@ How are you feeling today?
     </tr>
   </tbody>
 </table>
+
+<div >
+  <h2> See your weekly mood analysis</h2>
+    <div class="week">
+      <p>Week 1</p>
+      <p>Week 2</p>
+      <p>Week 3</p>
+      <p>Week 4</p>
+</div>
 </body>
 
 <!-- this is the add event page -->
@@ -124,29 +119,23 @@ How are you feeling today?
   <button id="close" onclick="closeform()">back</button>
   <heading id= "heading"> Event </heading>
    <form name=journaling>
-    
-      
- 
      <label for="Event_name">Event Name</label>
      <input type="text" id="subject" name="name" placeholder="What's this event called?">
- 
- 
+
      <label for="Event_location ">Event Location</label>
      <input type="text" id="Event place" name="place" placeholder="Where's the fun going to be?">
- 
+
      <label for="Journaling">Event Description</label>
      <textarea id="description" name="description" placeholder="What's going to happen this date?" style="height:200px"></textarea>
- 
+
      <button type="button" onclick="submitForm()" >Submit </button>
      <script type="text/javascript" src="journalingscripts.js"></script>
 
      <button type = "button" onclick = "hideEvent()"> remove event </button>
-     
    </form>
-    
-    
  </section>
 
 <script type="text/javascript" src="js/janfebmar.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="weeklymood.js"></script>
 </html>
