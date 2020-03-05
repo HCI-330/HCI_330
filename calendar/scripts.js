@@ -12,7 +12,7 @@ document.querySelector('.past_date').onclick = (ev) => {
 };
 
 const dateCheckF = (ev) => {
-    window.location.href = 'NewEvent.html';
+    document.querySelector('#hidden-panel').classList.remove('hidden');
 };
 
 document.querySelector('.future_date').onclick = (ev) => {
@@ -26,3 +26,4 @@ document.querySelector('.current_date').onclick = (ev) => {
 const journal = (ev) => {
     window.location.href = 'Journaling(Data_collection_form).html';
 };
+

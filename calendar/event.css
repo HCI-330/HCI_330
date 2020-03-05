@@ -13,28 +13,48 @@ body{
 }
 .event-name {
 
-  padding-top: 20px;
   grid-column-start: 2;
   grid-row-start: 2;
-  padding-left: 30px;
   border-bottom: 2px solid black;
   border-spacing: 3em;
   border-top-left-radius: 100px;
+  width: 100%; /* Full width */
+   padding: 12px; /* Some padding */ 
+   border: 1px solid #ccc; /* Gray border */
+   border-radius: 4px; /* Rounded borders */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical
 }
 .event-place {
   grid-column-start: 2;
   grid-row-start: 4;
-  padding-left: 30px;
-  padding-top: 10px;
   border-bottom: 2px solid black;
-  border-spacing: 3em;
+  border-top-left-radius: 100px;
+  width: 100%; /* Full width */
+   padding: 12px; /* Some padding */ 
+   border: 1px solid #ccc; /* Gray border */
+   border-radius: 4px; /* Rounded borders */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical
 }
 .event-info {
   grid-column-start: 2;
   grid-row-start: 8;
-  padding-left: 30px;
   border-bottom: 2px solid black;
   border-spacing: 3em;
+  border-top-left-radius: 100px;
+  width: 100%; /* Full width */
+   padding: 12px; /* Some padding */ 
+   border: 1px solid #ccc; /* Gray border */
+   border-radius: 4px; /* Rounded borders */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical
 }
 
 #save {
