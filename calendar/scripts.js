@@ -14,10 +14,11 @@ const homepage = (ev) => {
 };
 
 const dateCheckF = (ev) => {
+    console.log("worked")
     document.querySelector('#hidden-panel').classList.remove('hidden');
 };
 
-document.querySelector('.future_date').onclick = (ev) => {
+document.querySelector('#addEvent26').onclick = (ev) => {
     dateCheckF();
 };
 
