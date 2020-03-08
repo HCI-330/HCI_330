@@ -24,6 +24,8 @@ const submitForm = (ev) => {
     document.querySelector('#hidden-panel').classList.add('hidden');
     document.querySelector('#new-event').classList.remove('hidden');
     document.querySelector('#new-event span').innerHTML = eventText;
+    document.querySelector('#eventExists').classList.remove('hiddenText');
+    document.querySelector('#eventExists').innerHTML = "";
     ev.preventDefault();
  };
 

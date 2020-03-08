@@ -14,7 +14,6 @@ const homepage = (ev) => {
 };
 
 const dateCheckF = (ev) => {
-    console.log("worked")
     document.querySelector('#hidden-panel').classList.remove('hidden');
 };
 
@@ -37,6 +36,6 @@ document.querySelector('.week').onclick = (ev) => {
     moodCheckF();
 };
 
-document.querySelector('.past_date').onclick = (ev) => {
+document.querySelector('#pastDate3').onclick = (ev) => {
     dateCheck();
 };
