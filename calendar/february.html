@@ -6,6 +6,13 @@
     <title> CS330_mentalhealth </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" type="text/css" href="calendar.css">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="stylesken.css" rel="stylesheet">
+    <script defer src="scriptken.js"></script>
   </head>
 
 
@@ -17,16 +24,6 @@
       <li class="Month">February<br><span style="font-size:18px">2020</span></li>
     </ul>
   </div>
-
-
-How are you feeling today?
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😝</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😝</span></button>
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😀</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😀</span></button>
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 🙂</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 🙂</span></button>
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😐</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😐</span></button>
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 🙁</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 🙁</span></button>
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😥</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😥</span></button>
-<button type="button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😡</span><br> Write <br> Journal <br> Today'    "><span style=font-size:50px > 😡</span></button>
 
   <table id="month">
   <thead>
@@ -163,8 +160,49 @@ How are you feeling today?
       </td>
     </tr>
     <tr>
+
+
       <!-- <th scope="row">5</th> -->
-      <td id = "current_date" class="current_date">23 <br> Write <br> Journal <br> Today</td>
+          <td id = "current_date" class="current_date">23 <br>
+
+<button data-modal-target="#modal">Mood</button>
+  <div class="modal" id="modal">
+
+    
+
+    <div class="modal-header">
+      <div class="title">How are you feeling today?</div>
+
+    </div>
+    <div class="modal-body">
+
+
+      
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 😝</span><br>')"><span style=font-size:50px > 😝</span></button>
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 😀</span><br>')"><span style=font-size:50px > 😀</span></button>
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 🙂</span><br>')"><span style=font-size:50px > 🙂</span></button>
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 😐</span><br>')"><span style=font-size:50px > 😐</span></button>
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 🙁</span><br>')"><span style=font-size:50px > 🙁</span></button>
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 😥</span><br>')"><span style=font-size:50px > 😥</span></button>
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').insertAdjacentHTML('beforeend', '<br> <span style=font-size:50px > 😡</span><br>')"><span style=font-size:50px > 😡</span></button>
+
+
+<button data-close-button class="close-button" onclick="document.getElementById('current_date').innerHTML =  '23 <br> <span style=font-size:50px > 😡</span><br>'    "><span style=font-size:50px > 😡</span></button>
+
+   </div>
+
+
+  </div>
+  <div id="overlay"></div>
+
+<button data-modal-target onclick="journal()"><span style=font-size:12px > Journal</span></button>
+
+
+
+      </td>
+
+
+
       <td class="future_date">24
         <div class="hiddenText"> 
           Add Event 
