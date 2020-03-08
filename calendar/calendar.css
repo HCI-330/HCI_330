@@ -98,10 +98,7 @@ td{
 
 .fas {
   padding: 10px;
-  width: 50px;
-  height: 50px;
   grid-column-start: 1;
-  font-size: 25px;
   cursor: pointer;
 }
 
@@ -211,10 +208,6 @@ td{
   font-size: 40px;
 }
 
-#close {
-  margin-left: 1200px;
-
-}
 * {
   box-sizing: border-box;
   overflow: auto;
@@ -231,8 +224,10 @@ td{
   font-size: 15px;
 }
 
-.close{
-   height:30px;
+.fas .fa-chevron-left{
+  grid-column-start: 1;
+  padding: 0px;
+  cursor: pointer;
 }
 
 /* Style inputs with type="text", select elements and textareas */
