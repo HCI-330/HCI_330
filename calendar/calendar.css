@@ -20,15 +20,18 @@ td{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+  text-align: center !important;
   }
 
   #month td, #month th {
     border: 1px solid #ddd;
     padding: 8px;
+  text-align: center !important;
   }
 
   #month tr{
     background-color: #FCF1D7;
+  text-align: center !important;
   }
 
   #month th {
@@ -38,6 +41,7 @@ td{
     background-color: #59C3C3;
     color: white;
     text-align:center;
+  text-align: center !important;
 
   }
 
@@ -45,6 +49,7 @@ td{
     text-align:center;
     vertical-align:top;
     height: 150px;
+  text-align: center !important;
   }
   #month tr td i{
     display: flex;
@@ -52,6 +57,7 @@ td{
     text-align:center;
     width: 30px;
     height: 30px;
+  text-align: center !important;
   }
 
 #entry_of_interest{
@@ -86,6 +92,7 @@ td{
   background: #D5F2E3;
   text-align: center;
   margin: 0;
+  text-align: center !important;
 
 
 }
@@ -120,7 +127,7 @@ td{
 
 /* Month list */
 .month ul {
-  padding: 70px 25px;
+  padding: 70px 25px; 
 }
 
 /* .month ul li {
