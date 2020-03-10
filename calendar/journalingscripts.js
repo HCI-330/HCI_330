@@ -2,7 +2,7 @@ const formCheck = (ev) => {
     mood = document.querySelector('#mood').value;
     if (mood == "placeholder")
     {
-        alert("Hey you forgot to input a mood!");
+        document.querySelector('#remind').classList.remove('hidden');
     }
     else
     {
