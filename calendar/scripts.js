@@ -1,5 +1,9 @@
+
+
+
 const dateCheck = (ev) => {
-    window.location.href = 'index.html';
+    // window.location.href = 'index.html';
+
 };
 
 const save = (ev) => {
@@ -10,20 +14,22 @@ const save = (ev) => {
 };
 
 const homepage = (ev) => {
+    console.log("homepage is called")
     window.location.href = 'february.html';
+    
 };
 
 const dateCheckF = (ev) => {
     document.querySelector('#hidden-panel').classList.remove('hidden');
 };
 
-document.querySelector('.future_date').onclick = (ev) => {
+document.querySelector('#addEvent26').onclick = (ev) => {
     dateCheckF();
 };
 
-document.querySelector('.current_date').onclick = (ev) => {
-    journal();
-};
+//document.querySelector('.current_date').onclick = (ev) => {
+//    journal();
+//};
 
 const journal = (ev) => {
     window.location.href = 'Journaling(Data_collection_form).html';
@@ -36,6 +42,6 @@ document.querySelector('.week').onclick = (ev) => {
     moodCheckF();
 };
 
-document.querySelector('.past_date').onclick = (ev) => {
+document.querySelector('#pastDate3').onclick = (ev) => {
     dateCheck();
 };

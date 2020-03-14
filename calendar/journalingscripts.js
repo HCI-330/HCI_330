@@ -2,7 +2,7 @@ const formCheck = (ev) => {
     mood = document.querySelector('#mood').value;
     if (mood == "placeholder")
     {
-        alert("Hey you forgot to input a mood!");
+        document.querySelector('#remind').classList.remove('hidden');
     }
     else
     {
@@ -24,6 +24,8 @@ const submitForm = (ev) => {
     document.querySelector('#hidden-panel').classList.add('hidden');
     document.querySelector('#new-event').classList.remove('hidden');
     document.querySelector('#new-event span').innerHTML = eventText;
+    document.querySelector('#eventExists').classList.remove('hiddenText');
+    document.querySelector('#eventExists').innerHTML = "";
     ev.preventDefault();
  };
 

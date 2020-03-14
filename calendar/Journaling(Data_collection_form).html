@@ -2,11 +2,14 @@
 <html>
 <head>
   <link rel="stylesheet" href="Journaling.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
 
 <section class="fullscreen">
- <button id="close" onclick="homepagefromjournal()">back</button>
+ <button id="close" onclick="homepagefromjournal()">
+  <i class="fas fa-chevron-left"></i>
+</button>
   <form name=journaling>
    
      
@@ -18,7 +21,11 @@
     <input type="text" id="well" name="Well" placeholder="There's got to be something that made you smile today right?">
    
 
-    <label for="mood">Select a mood</label>
+    <label for="mood">Select a mood: *
+      <div class = hidden id = "remind">
+        you forgot a mood!
+      </div>
+    </label>
     <select id="mood" name="mood" >
       <option value="placeholder">Mood</option>
       <option value="Excited">Excited 😝</option>

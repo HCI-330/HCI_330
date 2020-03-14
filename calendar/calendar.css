@@ -20,15 +20,18 @@ td{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+  text-align: center !important;
   }
 
   #month td, #month th {
     border: 1px solid #ddd;
     padding: 8px;
+  text-align: center !important;
   }
 
   #month tr{
     background-color: #FCF1D7;
+  text-align: center !important;
   }
 
   #month th {
@@ -38,6 +41,7 @@ td{
     background-color: #59C3C3;
     color: white;
     text-align:center;
+  text-align: center !important;
 
   }
 
@@ -45,6 +49,7 @@ td{
     text-align:center;
     vertical-align:top;
     height: 150px;
+  text-align: center !important;
   }
   #month tr td i{
     display: flex;
@@ -52,6 +57,7 @@ td{
     text-align:center;
     width: 30px;
     height: 30px;
+  text-align: center !important;
   }
 
 #entry_of_interest{
@@ -86,6 +92,7 @@ td{
   background: #D5F2E3;
   text-align: center;
   margin: 0;
+  text-align: center !important;
 
 
 }
@@ -98,10 +105,7 @@ td{
 
 .fas {
   padding: 10px;
-  width: 50px;
-  height: 50px;
   grid-column-start: 1;
-  font-size: 25px;
   cursor: pointer;
 }
 
@@ -123,7 +127,7 @@ td{
 
 /* Month list */
 .month ul {
-  padding: 70px 25px;
+  padding: 70px 25px; 
 }
 
 /* .month ul li {
@@ -184,9 +188,6 @@ td{
   color: white !important
 }
 
-.past_date {
-  background:orange !important;
-}
 .current_date {
   background:lightgreen !important;
 }
@@ -214,10 +215,6 @@ td{
   font-size: 40px;
 }
 
-#close {
-  margin-left: 1200px;
-
-}
 * {
   box-sizing: border-box;
   overflow: auto;
@@ -234,8 +231,10 @@ td{
   font-size: 15px;
 }
 
-.close{
-   height:30px;
+.fas .fa-chevron-left{
+  grid-column-start: 1;
+  padding: 0px;
+  cursor: pointer;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -247,7 +246,7 @@ input[type=text], select, textarea {
  box-sizing: border-box; /* Make sure that padding and width stays in place */
  margin-top: 6px; /* Add a top margin */
  margin-bottom: 16px; /* Bottom margin */
- resize: vertical /* Allow the
+ resize: vertical /* Allow the */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -255,8 +254,91 @@ input[type=text], select, textarea {
 /* When moving the mouse over the submit button, add a darker green color */
 
 /* Add a background color and some padding around the form */
-.container {
- border-radius: 5px;
- background-color: #f2f2f2;
- padding: 20px;
+
+
+
+/* HOVER EFFECT PART 1 */
+
+.hiddenText{
+  display: none;
+}
+.past_date:hover .hiddenText{
+  display: block;
+}
+.past_date:hover {
+  background: orange;
+}
+.future_date:hover .hiddenText{
+  display: block;
+}
+
+.future_date:hover {
+  background: pink;
+}
+
+
+.emotion {
+  text-emphasis: bold;
+  font-size: 20;
+}
+
+.mjournal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.mjournal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.mjournaltitle {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.mjournaltitle .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.mjournaltitle .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.mjournalbody {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
