@@ -8,6 +8,7 @@
 	<!-- Load plotly.js into the DOM -->
 	  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <link rel="stylesheet" type="text/css" href="calendar.css">
+    <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
@@ -16,6 +17,9 @@
         <li class="prev">&#10094;</li>
         <li class="next">&#10095;</li>
         <li>Mood<br><span style="font-size:18px">February 16-22</span></li>
+        <button onclick=homepage()>
+          Monthly View
+        </button>
       </ul>
     </div>
     <table id="month">

@@ -37,7 +37,7 @@ var layout = {
     },
     yaxis: {
       title: {
-        text: 'Mood Rating (1 being sad and 5 being happy',
+        text: 'Mood Rating (1 being sad and 5 being happy)',
         font: {
           size: 18,
           color: '#7f7f7f'
